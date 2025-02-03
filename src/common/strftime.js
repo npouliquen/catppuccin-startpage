@@ -63,7 +63,7 @@ Date.prototype.strftime = function (format = "c") {
       N: (date.getMonth() + 1).pad(),
       y: date.getFullYear().pad(),
       Y: date.getFullYear(),
-      H: date.getHours(),
+      H: date.getHours() % 12,
       h: date.getHours().pad(),
       p: date.getHours() >= 12 ? "PM" : "AM",
       o: date.getDate().ord(),
