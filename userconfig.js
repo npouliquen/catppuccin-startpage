@@ -8,19 +8,19 @@ const default_config = {
     scale: "F",
   },
   clock: {
-    format: "H:i p",
+    format: "hh:i p",
     iconColor: palette.maroon,
   },
   disabled: [],
-  fastlink: "https://app.raindrop.io",
+  fastlink: "https://google.com",
   openLastVisitedTab: true,
   tabs: [
     {
-      name: "myself",
-      background_url: "src/img/banners/cbg-09.gif",
+      name: "Home",
+      background_url: "src/img/banners/cbg-01.gif",
       categories: [
         {
-          name: "Media",
+          name: "",
           links: [
             {
               name: "Youtube",
@@ -49,31 +49,94 @@ const default_config = {
           ],
         },
         {
-          name: "workspace",
+          name: "",
           links: [
             {
-              name: "gmail",
+              name: "Gmail",
               url: "https://mail.google.com",
               icon: "brand-gmail",
               icon_color: palette.green,
             },
             {
-              name: "calendar",
+              name: "Calendar",
               url: "https://calendar.google.com",
               icon: "calendar-filled",
               icon_color: palette.peach,
             },
             {
-              name: "sheets",
+              name: "Sheets",
               url: "https://docs.google.com/spreadsheets",
               icon: "table",
               icon_color: palette.red,
             },
             {
-              name: "drive",
+              name: "Drive",
               url: "https://drive.google.com/drive/home",
               icon: "brand-google-drive",
               icon_color: palette.blue,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "Server",
+      background_url: "src/img/banners/cbg-07.gif",
+      categories: [
+        {
+          name: "Management",
+          links: [
+            {
+              name: "Unraid",
+              url: "",
+              icon: "server",
+              icon_color: palette.red,
+            },
+            {
+              name: "Router",
+              url: "unifi.ui.com",
+              icon: "router",
+              icon_color: palette.flamingo,
+            },
+            {
+              name: "Modem",
+              url: "",
+              icon: "route",
+              icon_color: palette.mauve,
+            },
+          ],
+        },
+        {
+          name: "DVR",
+          links: [
+            {
+              name: "Sonarr",
+              url: "",
+              icon: "device-tv",
+              icon_color: palette.blue,
+            },
+            {
+              name: "Radarr",
+              url: "",
+              icon: "movie",
+              icon_color: palette.peach,
+            },
+          ],
+        },
+        {
+          name: "Download",
+          links: [
+            {
+              name: "Deluge",
+              url: "",
+              icon: "droplet",
+              icon_color: palette.sapphire,
+            },
+            {
+              name: "Radarr",
+              url: "",
+              icon: "news",
+              icon_color: palette.maroon,
             },
           ],
         },
